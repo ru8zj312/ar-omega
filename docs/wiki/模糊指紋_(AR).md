@@ -15,7 +15,7 @@ aliases:
   </tr>
   <tr>
     <th>主要思想家</th>
-    <td><i></i></td>
+    <td><i>K. N.</i></td>
   </tr>
   <tr>
     <th>受影響於</th>
