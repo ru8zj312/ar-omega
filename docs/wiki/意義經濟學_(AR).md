@@ -124,3 +124,11 @@ AR的最終診斷是，晚期現代性的核心特徵，是**所有主要的WIF�
 ---
 **腳註：**
 [^44]: Kuhn, Thomas S. *The Structure of Scientific Revolutions*. 1962. University of Chicago Press.
+
+
+
+%%
+宏觀經濟已經破產的體系中，個體的奮鬥無法改變系統性的崩潰趨勢。
+
+
+%%
