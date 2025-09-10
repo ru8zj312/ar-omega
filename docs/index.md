@@ -27,3 +27,7 @@ The notes appear as pages within these sections. For example, [[Note 1]] in `Top
 [晝夜喻](/ar-omega/wiki/晝夜喻 "匿名實在論")
 
 [終局論路徑](/ar-omega/wiki/終局論路徑 "匿名實在論")
+
+[晦蝕_(AR)](/ar-omega/wiki/晦蝕_(AR) "匿名實在論")
+
+[織物_(Σ)](/ar-omega/wiki/織物_(Σ) "匿名實在論")
