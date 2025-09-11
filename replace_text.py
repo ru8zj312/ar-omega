@@ -109,25 +109,28 @@ try:
         index_content = file.read()
 
     links_to_add = []
-    for page_name in sorted(list(existing_wiki_pages)): # 排序以確保每次新增順序一致
+    # 按照字母順序排序，以確保每次新增的順序一致
+    for page_name in sorted(list(existing_wiki_pages)):
         # 產生標準的 Markdown 連結格式
-        markdown_link = f"[{page_name}]({string_to_replace}{page_name})"
+        markdown_link = f"- [{page_name}]({string_to_replace}{page_name})" # 加上項目符號
         # 檢查連結是否已存在於檔案內容中
         if markdown_link not in index_content:
             links_to_add.append(markdown_link)
 
     if links_to_add:
         print(f"發現 {len(links_to_add)} 個新連結，將新增至檔案末尾：")
-        
+
         with open(index_file_path, 'a', encoding='utf-8') as file:
-            # 確保檔案末尾是新的一行
-            if not index_content.endswith('\n\n') and index_content.strip() != '':
-                file.write('\n') # 如果結尾不是空的，加一個換行
-            
+            # 確保檔案末尾和新內容之間有適當的間隔
+            if index_content.strip() and not index_content.endswith('\n\n'):
+                # 如果檔案不為空，且結尾不是兩個換行符，則補上
+                file.write('\n' if index_content.endswith('\n') else '\n\n')
+
+            # 寫入新連結，每個連結後方加上兩個換行符，以產生一個空行
             for link in links_to_add:
-                file.write(link + '\n')
+                file.write(link + '\n\n')
                 print(f"  - 已新增：{link}")
-        
+
         print(f"\n成功更新 '{index_file_path}'！")
     else:
         print(f"'{index_file_path}' 內容已是最新，無需新增連結。")
